@@ -1,0 +1,69 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: asset-cloud-web
+  labels:
+    app.kubernetes.io/name: nginx
+    app.kubernetes.io/instance: asset-cloud-web
+  namespace: assetcloud
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: nginx
+      app.kubernetes.io/instance: asset-cloud-web
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: nginx
+        app.kubernetes.io/instance: asset-cloud-web
+    spec:
+      volumes:
+        - name: html
+          emptyDir: {}
+        - configMap:
+            name: asset-cloud-web-nginx-extra-configs
+          name: extra-configs
+
+      initContainers:
+        - name: copy-html
+          image: $REGISTRY/$DOCKERHUB_NAMESPACE/$APP_NAME:SNAPSHOT-$BUILD_NUMBER
+          imagePullPolicy: IfNotPresent
+          command:
+            - sh
+            - -c
+            - cp -r /html/* /nginx-html
+          volumeMounts:
+            - name: html
+              mountPath: /nginx-html
+          resources:
+            requests:
+              memory: 10Mi
+              cpu: 10m
+
+      containers:
+        - name: asset-cloud-web
+          image: nginx:1.16-alpine
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            failureThreshold: 10
+          volumeMounts:
+            - name: extra-configs
+              mountPath: /etc/nginx/conf.d
+            - name: html
+              mountPath: /usr/share/nginx/html

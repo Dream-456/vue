@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  labels:
+    app: asset-cloud-web
+  name: asset-cloud-web
+  namespace: assetcloud
+spec:
+  rules:
+  - host: www.assetcloud.org.cn
+    http:
+      paths:
+      - backend:
+          serviceName: asset-cloud-web
+          servicePort: 80
+        path: /

@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: asset-cloud-web-nginx-extra-configs
+  namespace: assetcloud
+data:
+  default.conf: |-
+
+    server {
+      listen       80;
+      server_name  asset-cloud-web;
+
+      location / {
+        root    /usr/share/nginx/html;
+      }
+
+      location /dev-api/ {
+        proxy_pass http://platform.assetcloud.org.cn/dev-api/;
+      }
+
+    }

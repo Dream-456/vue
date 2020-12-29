@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="32px" viewBox="0 0 33 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 12</title>
+    <g id="应用平台" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-147.000000, -962.000000)" id="编组-12">
+            <g transform="translate(147.385000, 962.000000)">
+                <g id="编组-6" transform="translate(2.500000, 4.500000)" stroke="#303133" stroke-linejoin="round" stroke-width="1.44">
+                    <g id="编组" transform="translate(0.480000, 0.720000)">
+                        <g id="编组-5" transform="translate(10.080000, 10.080000)" stroke-linecap="round">
+                            <polyline id="路径-10备份-3" points="1.44 0 2.82476332 2.88 4.32 0"></polyline>
+                            <line x1="0" y1="2.88" x2="5.76" y2="2.88" id="路径-11备份-6"></line>
+                            <line x1="0" y1="6.48" x2="5.76" y2="6.48" id="路径-11备份-7"></line>
+                            <line x1="2.908125" y1="2.88" x2="2.851875" y2="8.64" id="路径-12备份-3"></line>
+                        </g>
+                        <g id="编组-4">
+                            <polygon id="路径-9" points="13.3043671 4.32 2.88 11.0560227 2.88 21.6 23.04 21.6 23.04 11.0560227"></polygon>
+                            <line x1="12.96" y1="0" x2="0" y2="8.64" id="路径-8" stroke-linecap="round"></line>
+                            <line x1="25.92" y1="0" x2="12.96" y2="8.64" id="路径-8备份" stroke-linecap="round" transform="translate(19.440000, 4.320000) scale(-1, 1) translate(-19.440000, -4.320000) "></line>
+                        </g>
+                    </g>
+                </g>
+                <g id="编组-7备份-4" fill="#000000" fill-rule="nonzero" opacity="0">
+                    <rect id="矩形备份" x="0" y="0" width="31.68" height="31.68"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

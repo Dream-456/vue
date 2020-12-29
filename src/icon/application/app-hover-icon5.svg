@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="32px" viewBox="0 0 33 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 11</title>
+    <g id="应用平台" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="应用平台鼠标hover状态" transform="translate(-147.000000, -1074.000000)">
+            <g id="编组-11" transform="translate(147.385000, 1074.000000)">
+                <g id="编组-7备份-5" fill="#000000" fill-rule="nonzero" opacity="0">
+                    <rect id="矩形备份" x="0" y="0" width="31.68" height="31.68"></rect>
+                </g>
+                <g id="编组-2" transform="translate(4.500000, 3.500000)" stroke="#154AD8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.44">
+                    <polygon id="路径-13" points="7.98761846 2.27426515 7.98761846 0 14.4636059 0 14.4636059 2.27426515 16.3781717 2.27426515 16.3781717 7.2 5.75070488 7.2 5.75070488 2.27426515"></polygon>
+                    <polyline id="路径-14" points="16.3781717 4.47783148 22.3911596 4.47783148 22.3911596 24.6378315 5.04387194e-15 24.6378315 2.55795385e-15 4.47783148 5.75070488 4.47783148"></polyline>
+                    <polyline id="路径-15" points="3.88505871 19.2455625 9.44455728 13.6575332 12.4583091 17.4946734 18.6761793 10.8383242"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
